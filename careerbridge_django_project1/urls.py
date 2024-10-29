@@ -19,12 +19,11 @@ from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('careerbridge_app1.urls')),
-    path(r"careerbridge_app", include('careerbridge_app1.urls')),
-    path('form/',include('forms_app.urls')),
+    #path(r"careerbridge_app", include('careerbridge_app1.urls')),
+    path('form/', include('forms_app.urls')),
 
 ]
 # Save media files during development
